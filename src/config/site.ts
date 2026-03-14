@@ -1,10 +1,10 @@
 const site = {
   // --- Site Metadata ---
   meta: {
-    title: "Breeze",
-    description: "A minimal Astro theme for personal websites",
-    author: "Your Name",
-    logo: "/logo.svg",
+    title: "My Novel Ink",
+    description: "A minimalistic writing and blogging ",
+    author: "Aroura",
+    logo: "https://github.com/aroura-writes/my-website/blob/main/public/icons8-felt-pens-60.svg",
     ogImage: "/og-image.png",
     // HTML lang attribute, affects page language and date formatting
     // Options: "zh-CN", "en", "ja", etc.
@@ -17,7 +17,7 @@ const site = {
     { name: "Home", subtitle: "Index", href: "/" },
     { name: "Writing", subtitle: "Blog", href: "/posts" },
     { name: "Projects", subtitle: "Works", href: "/projects" },
-    { name: "Friends", subtitle: "Links", href: "/friends" },
+    { name: "Picture Gallery", subtitle: "Links", href: "/picturegallery" },
     { name: "About", subtitle: "Me", href: "/about" },
   ],
 
@@ -29,10 +29,10 @@ const site = {
 
   // --- Homepage Hero ---
   hero: {
-    greeting: "👋 Hello, I'm Breeze",
+    greeting: "👋 Hello, I'm Aroura",
     // Supports HTML. Use <span class="font-medium text-foreground underline decoration-primary/30"> to highlight keywords
     description:
-      'A minimal personal website theme built with <span class="font-medium text-foreground underline decoration-primary/30">Astro</span> and <span class="font-medium text-foreground underline decoration-primary/30">Tailwind CSS</span>.',
+      'A small website for experiments and projects',
     cards: [
       { icon: "mdi:explore", label: "Status", value: "Building something cool" },
       { icon: "mdi:location", label: "Location", value: "Earth" },
