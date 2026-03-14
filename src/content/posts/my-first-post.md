@@ -6,5 +6,4 @@ tags: [intro]
 summary: My first post
 ---
 
-Hello! This is my first blog post.
----
+## Hello! This is my first blog post.
