@@ -4,7 +4,7 @@ const site = {
     title: "My Novel Ink",
     description: "A minimalistic writing and blogging ",
     author: "Aroura",
-    logo: "https://github.com/aroura-writes/my-website/blob/main/public/icons8-felt-pens-60.svg",
+    logo: "/icons8-felt-pens-60.svg",
     ogImage: "/og-image.png",
     // HTML lang attribute, affects page language and date formatting
     // Options: "zh-CN", "en", "ja", etc.
@@ -14,11 +14,11 @@ const site = {
   // --- Navigation ---
   // subtitle: decorative label shown below the name (uppercase, small text)
   navigation: [
-    { name: "Home", subtitle: "Index", href: "/" },
-    { name: "Writing", subtitle: "Blog", href: "/posts" },
-    { name: "Projects", subtitle: "Works", href: "/projects" },
-    { name: "Picture Gallery", subtitle: "Links", href: "/picturegallery" },
-    { name: "About", subtitle: "Me", href: "/about" },
+    { name: "Home", subtitle: "Index", href: "/my-website/" },
+    { name: "Writing", subtitle: "Blog", href: "/my-website/posts" },
+    { name: "Projects", subtitle: "Works", href: "/my-website/projects" },
+    { name: "Picture Gallery", subtitle: "Links", href: "/my-website/picturegallery" },
+    { name: "About", subtitle: "Me", href: "/my-website/about" },
   ],
 
   // --- Social Links ---
