@@ -1,5 +1,5 @@
 ---
-title: Hello World - Welcome to Breeze
+title: Hello World - Welcome to My Novel Ink
 createdAt: 2026-01-01
 category: technology
 tags: [astro, tailwindcss]
