@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import site from "@/config/site";
 
-const friends = await getCollection("friends");
+const pictures = await getCollection("gallery");
 ---
 
 <Layout
@@ -14,7 +14,7 @@ const friends = await getCollection("friends");
   <div class="animate-in fade-in slide-in-from-bottom-4 mx-auto max-w-2xl p-8 duration-700 md:p-16">
     <section class="mb-24">
       <header class="mb-12">
-        <h2 class="mb-4 text-3xl font-bold">{site.labels.friendsTitle}</h2>
+        <h2 class="mb-4 text-3xl font-bold">Picture Gallery</h2>
         <p class="mb-12 text-sm font-light text-muted-foreground italic">
           {site.labels.friendsDescription}
         </p>
@@ -22,7 +22,7 @@ const friends = await getCollection("friends");
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
         {friends.length === 0 ? (
           <div class="col-span-full py-12 text-center">
-            <p class="text-sm text-muted-foreground">No friends yet.</p>
+            <p class="text-sm text-muted-foreground">No pictures yet.</p>
           </div>
         ) : (
           friends.map((friend) => (
@@ -33,7 +33,7 @@ const friends = await getCollection("friends");
               class="group flex items-center gap-5 rounded-2xl border border-border/40 p-4 hover:bg-muted/30"
             >
               <Image
-                src={friend.data.avatar}
+                src={import.meta.env.BASE_URL + friend.data.avatar}
                 width={48}
                 height={48}
                 alt={friend.data.name}
