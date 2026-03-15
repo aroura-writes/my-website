@@ -17,8 +17,9 @@ const site = {
     { name: "Home", subtitle: "Index", href: "/my-website/" },
     { name: "Writing", subtitle: "Blog", href: "/my-website/posts" },
     { name: "Projects", subtitle: "Works", href: "/my-website/projects" },
-    { name: "Picture Gallery", subtitle: "Links", href: "/my-website/picturegallery" },
+    { name: "Picture Gallery", subtitle: "Story board", href: "/my-website/picturegallery" },
     { name: "About", subtitle: "Me", href: "/my-website/about" },
+    { name: "Blogs", subtitle: "Daily writes", href: "/my-website/blogs" },
   ],
 
   // --- Social Links ---
@@ -34,7 +35,7 @@ const site = {
     description:
       'A small website for experiments and projects',
     cards: [
-      { icon: "mdi:explore", label: "Status", value: "Building something cool" },
+      { icon: "mdi:explore", label: "Status", value: "Writing something cool" },
       { icon: "mdi:location", label: "Location", value: "Earth" },
     ],
   },
