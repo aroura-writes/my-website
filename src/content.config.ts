@@ -81,12 +81,18 @@ const tags = defineCollection({
 });
 
 const friends = defineCollection({
-  loader: file("./src/content/miscs/friends.json"),
+  type: "data",
   schema: z.object({
-    name: z.string().max(64),
-    description: z.string().optional().describe("One line string"),
-    link: z.string().url(),
-    avatar: z.string(),
+    name: z.string(),
+    description: z.string(),
+    link: z.string(),
+    avatar: z.string(), 
+  }),
+});
+
+// This tells Astro that the 'friends' folder is a real collection
+export const collections = {
+  friends: friends,
   }),
 });
 
